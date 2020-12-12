@@ -29,11 +29,6 @@ var server = http.createServer(function (request, response) {
         <h1>Hello Node.js</h1>
       `)
         response.end()
-    } else if (path === '/x') {
-        response.statusCode = 200
-        response.setHeader('Content-Type', '/text/css;charset=utf-8')
-        response.write(`body{color: red;}`)
-        response.end()
     } else if (path === '/style.css') {
         response.statusCode = 200
         response.setHeader('Content-Type', '/text/css;charset=utf-8')
